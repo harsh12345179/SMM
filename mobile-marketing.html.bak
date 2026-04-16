@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Marketing | Nice & Next StyleUp</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg,#fdfbfb,#ebedee);
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+header h1{ font-size:26px; }
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:17px;
+}
+nav a:hover{ color:#f1c40f; }
+
+/* HERO */
+.hero{
+    padding:80px 20px;
+    text-align:center;
+    background:#2c3e50;
+    color:white;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+}
+
+/* BLOG SECTION */
+.section{
+    padding:70px 50px;
+    text-align:center;
+}
+
+.blog-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.blog-card{
+    background:white;
+    width:320px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:left;
+    transition:0.3s;
+}
+
+.blog-card:hover{
+    transform:translateY(-8px);
+}
+
+.blog-card h3{
+    margin-bottom:15px;
+    color:#2c3e50;
+}
+
+.blog-card p{
+    color:#555;
+    font-size:15px;
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Nice & Next StyleUp</h1>
+    <nav>
+        <a href="smmproject.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="mobile-marketing.html">Mobile Marketing</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+</header>
+
+<!-- INTRO SECTION -->
+<section class="hero">
+    <h2>Mobile Marketing</h2>
+    <p>
+        Mobile marketing is a digital marketing strategy focused on reaching users 
+        through smartphones and tablets. It includes mobile apps, SMS marketing, 
+        social media advertising, search ads, and location-based targeting. 
+        With most internet users accessing content through mobile devices, 
+        mobile marketing helps businesses connect directly with customers anytime, anywhere.
+    </p>
+</section>
+
+<!-- BLOG SECTION -->
+<section class="section">
+    <h2>Mobile Marketing Blog Topics</h2>
+
+    <div class="blog-container">
+
+        <!-- 1 -->
+        <div class="blog-card">
+            <h3>1. App-Based Marketing</h3>
+            <p>
+                This is mobile advertising involving mobile apps. While 80% of mobile time is spent engaged with apps,
+                you don’t have to create an app yourself. Services like Google AdMob help advertisers create mobile ads
+                that appear within third-party apps. Facebook also integrates mobile promoted posts seamlessly into
+                users' news feeds.
+            </p>
+        </div>
+
+        <!-- 2 -->
+        <div class="blog-card">
+            <h3>2. In-Game Mobile Marketing</h3>
+            <p>
+                In-game mobile marketing refers to ads that appear inside mobile games.
+                These ads can be banner popups, full-page images, or video ads shown between
+                loading screens. It allows brands to target engaged users during gameplay.
+            </p>
+        </div>
+
+        <!-- 3 -->
+        <div class="blog-card">
+            <h3>3. QR Codes</h3>
+            <p>
+                QR codes are scanned by users to access a specific webpage.
+                They are often linked with mobile gamification and promotional campaigns.
+                Users scan the code without always knowing what surprise or offer awaits them.
+            </p>
+        </div>
+
+        <!-- 4 -->
+        <div class="blog-card">
+            <h3>4. Location-Based Marketing</h3>
+            <p>
+                Location-based ads appear based on a user’s geographic location.
+                Businesses can target customers within a specific radius, such as
+                1 mile from their store, increasing the chances of real-time engagement.
+            </p>
+        </div>
+
+        <!-- 5 -->
+        <div class="blog-card">
+            <h3>5. Mobile Search Ads</h3>
+            <p>
+                Mobile search ads are Google search ads designed specifically for mobile devices.
+                They often include extensions like click-to-call buttons, directions,
+                and map integrations to improve user convenience.
+            </p>
+        </div>
+
+        <!-- 6 -->
+        <div class="blog-card">
+            <h3>6. Mobile Apps</h3>
+            <p>
+                A mobile app is a software application developed for smartphones and tablets.
+                These apps are designed to meet device constraints and use features like
+                GPS, camera, and accelerometer. Gaming apps often use motion sensors
+                to enhance user experience.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Nice & Next StyleUp | Mobile Marketing Page
+</footer>
+
+</body>
+</html>

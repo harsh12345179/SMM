@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nice & Next StyleUp</title>
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body{
+    background: linear-gradient(120deg,#fdfbfb,#ebedee);
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{ font-size:28px; }
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+}
+nav a:hover{ color:#f1c40f; }
+
+/* HERO */
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd47") center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{ font-size:50px; }
+.hero p{ font-size:22px; margin:20px 0; }
+
+.hero button{
+    padding:15px 35px;
+    font-size:20px;
+    border:none;
+    background:#f1c40f;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+/* COMMON SECTION STYLE */
+.section{
+    padding:80px 60px;
+    text-align:center;
+}
+
+/* PRODUCTS */
+.products{ background:#f5f5f5; }
+
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:270px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{ transform:translateY(-10px); }
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
+}
+
+.card h3{ margin:15px; }
+.card p{ color:#555; }
+
+.card button{
+    margin:15px;
+    padding:10px 20px;
+    background:#2c3e50;
+    color:white;
+    border:none;
+    border-radius:20px;
+}
+
+/* ===== MARKETING SECTION ===== */
+.marketing{
+    background:white;
+}
+
+.marketing-grid{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.marketing-box{
+    width:280px;
+    padding:30px;
+    border-radius:15px;
+    background:#2c3e50;
+    color:white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:.3s;
+}
+
+.marketing-box:hover{
+    transform:scale(1.05);
+    background:#34495e;
+}
+
+/* ===== BLOG SECTION ===== */
+.blog{
+    background:#f5f5f5;
+}
+
+.blog-card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    overflow:hidden;
+    text-align:left;
+}
+
+.blog-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.blog-content{
+    padding:15px;
+}
+
+.blog-content h4{
+    margin-bottom:10px;
+}
+
+.read-btn{
+    background:#f1c40f;
+    border:none;
+    padding:8px 15px;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+/* SOCIAL BUTTONS CENTERED */
+.social-buttons{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;   /* centers horizontally */
+    align-items:center;
+    gap:20px;
+}
+
+/* Buttons */ footer
+.social-btn{
+    text-decoration:none;
+    padding:10px 25px;
+    border-radius:25px;
+    color:white;
+    font-weight:600;
+    display:inline-block;
+    transition:0.3s;
+}
+
+/* Facebook */
+.fb{
+    background:#1877f2;
+}
+.fb:hover{
+    background:#0d5fd3;
+    transform:translateY(-3px);
+}
+
+/* Instagram */
+.ig{
+    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+}
+.ig:hover{
+    opacity:0.9;
+    transform:translateY(-3px);
+}
+
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-box{
+    background:white;
+    padding:30px;
+    width:320px;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Nice & Next StyleUp</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#marketing">Marketing</a>
+        <a href="#blog">Blog</a>
+        <a href="#loginModal" onclick="openModal()">Login</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h2>Upgrade Your Style</h2>
+        <p>Trending Fashion | Social Media Promotions | Brand Growth</p>
+        <button>Shop Now</button>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products section" id="products">
+    <h2>Featured Collections</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+            <h3>Stylish Wear</h3>
+            <p>Premium Quality</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a13">
+            <h3>Modern Fashion</h3>
+            <p>Trending Online</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+            <h3>Street Style</h3>
+            <p>Social Media Hit</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTENT MARKETING SECTION ===== -->
+<section class="marketing section" id="marketing">
+    <h2>Our Marketing Services</h2>
+
+    <div class="marketing-grid">
+        <div class="marketing-box">
+            <h3>Social Media Ads</h3>
+            <p>Instagram & Facebook promotions to boost brand reach.</p>
+        </div>
+
+        <div class="marketing-box">
+            <h3>Influencer Campaigns</h3>
+            <p>Collaborate with fashion influencers to grow faster.</p>
+        </div>
+
+        <div class="marketing-box">
+            <h3>SEO & Content</h3>
+            <p>Blogs and SEO strategies to drive organic traffic.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BLOG SECTION ===== -->
+<section class="blog section" id="blog">
+    <h2>Latest Blog Posts</h2>
+
+    <div class="cards">
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb">
+            <div class="blog-content">
+                <h4>Top Fashion Trends 2026</h4>
+                <p>Discover the styles dominating this year.</p>
+                <button class="read-btn">Read More</button>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9">
+            <div class="blog-content">
+                <h4>Grow Your Brand Online</h4>
+                <p>Marketing tips for fashion startups.</p>
+                <button class="read-btn">Read More</button>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1520975922323-6d2f45b9b6ae">
+            <div class="blog-content">
+                <h4>Street Style Guide</h4>
+                <p>How to create bold everyday outfits.</p>
+                <button class="read-btn">Read More</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+<center>
+    <p>© 2026 Nice & Next StyleUp</p>
+
+    <div class="social-buttons">
+        <a href="https://facebook.com" target="_blank" class="social-btn fb">Facebook</a>
+        <a href="https://instagram.com" target="_blank" class="social-btn ig">Instagram</a>
+    </div>
+</center>
+</footer>
+
+
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+    <div class="modal-box">
+        <span onclick="closeModal()">X</span>
+        <h2>Login / Sign Up</h2>
+        <input type="text" placeholder="Username"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <button onclick="alert('Demo Login Successful')">Submit</button>
+    </div>
+</div>
+
+<script>
+function openModal(){
+    document.getElementById("loginModal").style.display="flex";
+}
+function closeModal(){
+    document.getElementById("loginModal").style.display="none";
+}
+</script>
+
+</body>
+</html>

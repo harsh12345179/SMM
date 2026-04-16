@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nice & Next StyleUp</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+/* HEADER */
+header{
+    background:#2c3e50;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+}
+nav a:hover{color:#f1c40f;}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd47") center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+}
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+.hero button{
+    padding:15px 35px;
+    background:#f1c40f;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+/* SECTION */
+.section{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:270px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+.card:hover{transform:translateY(-8px);}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
+}
+
+.card h3{margin:15px;}
+.card p{color:#555;}
+
+.card button{
+    margin:15px;
+    padding:10px 20px;
+    background:#2c3e50;
+    color:white;
+    border:none;
+    border-radius:20px;
+}
+
+/* MARKETING BOX */
+.marketing{
+    background:white;
+}
+.marketing-box{
+    width:280px;
+    padding:30px;
+    border-radius:15px;
+    background:#2c3e50;
+    color:white;
+    transition:.3s;
+}
+.marketing-box:hover{
+    transform:scale(1.05);
+    background:#34495e;
+}
+
+/* CHANNEL BUTTON */
+.m-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#f1c40f;
+    color:black;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+/* BLOG */
+.blog-card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+.blog-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.blog-content{
+    padding:15px;
+}
+
+/* APP SECTION */
+.app{
+    background:#2c3e50;
+    color:white;
+}
+.app button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#f1c40f;
+    border:none;
+    border-radius:25px;
+}
+
+/* FOOTER */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>StyleUp</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="mobile-marketing.html">Marketing</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Upgrade Your Style</h1>
+        <p>Fashion + Marketing + Growth</p>
+        <button>Explore Now</button>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section">
+    <h2>Trending Collections</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+            <h3>Modern Wear</h3>
+            <p>Premium outfits</p>
+            <button>Shop</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+            <h3>Street Style</h3>
+            <p>Trending fashion</p>
+            <button>Shop</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a13">
+            <h3>Casual Wear</h3>
+            <p>Daily comfort</p>
+            <button>Shop</button>
+        </div>
+    </div>
+</section>
+
+<!-- MARKETING -->
+<section class="section marketing">
+    <h2>Marketing Services</h2>
+    <div class="cards">
+        <div class="marketing-box">
+            <h3>Social Media</h3>
+            <p>Grow via Instagram & Ads</p>
+        </div>
+        <div class="marketing-box">
+            <h3>Influencer</h3>
+            <p>Collaborate & grow</p>
+        </div>
+        <div class="marketing-box">
+            <h3>SEO</h3>
+            <p>Rank on Google</p>
+        </div>
+    </div>
+</section>
+
+<!-- CHANNELS -->
+<section class="section">
+    <h2>Marketing Channels</h2>
+    <div class="cards">
+        <div class="marketing-box">
+            <h3>Email Marketing</h3>
+            <a href="emailmarketing.html" class="m-btn">Explore</a>
+        </div>
+        <div class="marketing-box">
+            <h3>Affiliate Marketing</h3>
+            <a href="affiliatemarketing.html" class="m-btn">Explore</a>
+        </div>
+        <div class="marketing-box">
+            <h3>Video Marketing</h3>
+            <a href="videomarketing.html" class="m-btn">Explore</a>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+<section class="section">
+    <h2>Latest Blogs</h2>
+    <div class="cards">
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb">
+            <div class="blog-content">
+                <h4>Fashion Trends</h4>
+                <p>Latest styles</p>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9">
+            <div class="blog-content">
+                <h4>Brand Growth</h4>
+                <p>Marketing tips</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- APP -->
+<section class="section app">
+    <h2>Download StyleUp App</h2>
+    <p>Get offers & faster shopping</p>
+    <button>Download Now</button>
+</section>
+
+<footer>
+    © 2026 Nice & Next StyleUp
+</footer>
+
+</body>
+</html>

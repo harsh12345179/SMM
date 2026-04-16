@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Marketing | StyleUp</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#2c3e50;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+/* HERO */
+.hero{
+    padding:80px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#2c3e50,#34495e);
+    color:white;
+    animation:fadeIn 1s ease;
+}
+.hero h1{font-size:42px;}
+.hero p{margin-top:10px;}
+
+/* SECTION */
+.section{
+    padding:70px 50px;
+    text-align:center;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card-content{
+    padding:20px;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.stat{
+    background:#2c3e50;
+    color:white;
+    padding:25px;
+    border-radius:10px;
+    width:200px;
+}
+
+/* CREATOR SECTION */
+.creator{
+    background:#fff;
+}
+.creator-box{
+    background:#2c3e50;
+    color:white;
+    padding:30px;
+    border-radius:12px;
+    transition:.3s;
+}
+.creator-box:hover{
+    transform:scale(1.05);
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#f1c40f;
+    border-radius:20px;
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* FOOTER */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Nice & Next StyleUp – Content Marketing</h2>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Content Marketing Strategy</h1>
+    <p>Build Brand • Engage Audience • Grow Faster</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>Our Content Approach</h2>
+    <p style="max-width:800px;margin:auto;">
+    StyleUp focuses on storytelling, visuals, and social media content
+    to connect with modern audiences. We create fashion experiences,
+    not just products.
+    </p>
+</section>
+
+<!-- STRATEGY -->
+<section class="section">
+    <h2>Content Strategies</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1520975922323-6d2f45b9b6ae">
+            <div class="card-content">
+                <h3>Visual Content</h3>
+                <p>Photos & reels showcasing fashion lifestyle.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+            <div class="card-content">
+                <h3>Social Media</h3>
+                <p>Instagram, YouTube & influencer marketing.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
+            <div class="card-content">
+                <h3>Blog Content</h3>
+                <p>SEO blogs to drive traffic and awareness.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="section">
+    <h2>Our Growth</h2>
+
+    <div class="stats">
+        <div class="stat"><h3>20K+</h3><p>Customers</p></div>
+        <div class="stat"><h3>150+</h3><p>Campaigns</p></div>
+        <div class="stat"><h3>50+</h3><p>Influencers</p></div>
+    </div>
+</section>
+
+<!-- CREATOR HIRING -->
+<section class="section creator">
+    <h2>Join as Creator / Influencer</h2>
+
+    <div class="grid">
+
+        <div class="creator-box">
+            <h3>Content Creators</h3>
+            <p>Create reels, posts & fashion content for StyleUp.</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+
+        <div class="creator-box">
+            <h3>Influencers</h3>
+            <p>Collaborate with our brand and grow together.</p>
+            <a href="#" class="btn">Join Program</a>
+        </div>
+
+        <div class="creator-box">
+            <h3>Affiliate Partners</h3>
+            <p>Earn by promoting StyleUp products.</p>
+            <a href="#" class="btn">Start Earning</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background:#2c3e50;color:white;">
+    <h2>Build Your Brand with Content Marketing</h2>
+    <p>Start your journey with StyleUp today</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<footer>
+    © 2026 Nice & Next StyleUp | Content Marketing
+</footer>
+
+</body>
+</html>

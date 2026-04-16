@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Email Marketing | Nice & Next StyleUp</title>
+
+<meta name="description"
+content="Email marketing services by Nice & Next StyleUp. Transaction emails, newsletters, and promotions to grow your fashion brand and increase sales.">
+
+<style>
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f6fa;
+    line-height:1.7;
+    color:#333;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:#2c3e50;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+nav a:hover{ color:#f1c40f; }
+
+/* ===== HERO ===== */
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d") center/cover;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{ font-size:48px; }
+.hero p{ font-size:20px; margin-top:10px; }
+
+/* ===== SECTIONS ===== */
+.section{
+    padding:80px 60px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:34px;
+    color:#2c3e50;
+}
+
+.section .desc{
+    max-width:800px;
+    margin:15px auto 0;
+    color:#555;
+}
+
+/* ===== CARDS ===== */
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card button{
+    margin-top:10px;
+    padding:8px 18px;
+    border:none;
+    border-radius:20px;
+    background:#f1c40f;
+    cursor:pointer;
+}
+
+/* ===== CTA ===== */
+.cta{
+    background:#2c3e50;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.cta button{
+    margin-top:15px;
+    padding:12px 30px;
+    background:#f1c40f;
+    border:none;
+    border-radius:25px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#2c3e50;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Nice & Next StyleUp</h2>
+    <nav>
+        <a href="smmproject.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">Email Marketing</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Email Marketing Solutions</h1>
+        <p>Build relationships • Increase sales • Grow your fashion brand</p>
+    </div>
+</section>
+
+<!-- ================= TRANSACTION EMAILS ================= -->
+<section class="section">
+
+    <h2>Transaction Emails</h2>
+
+    <p class="desc">
+    Transaction emails keep customers informed after every purchase. From order confirmations to delivery tracking, these emails build trust and provide a smooth shopping experience. At Nice & Next StyleUp, we ensure every customer receives timely, professional communication that improves satisfaction and loyalty.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1556742031-c6961e8560b0">
+            <div class="card-content">
+                <h3>Order Confirmation</h3>
+                <p>Instant purchase verification emails.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07">
+            <div class="card-content">
+                <h3>Shipping Updates</h3>
+                <p>Track delivery in real time.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b">
+            <div class="card-content">
+                <h3>Invoices</h3>
+                <p>Professional billing emails.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="section" style="background:#fff;">
+
+    <h2>Newsletter Emails</h2>
+
+    <p class="desc">
+    Our newsletters keep your audience engaged with weekly fashion trends, styling tips, and new arrivals. This helps customers stay connected with the brand while driving repeat visits to the store and increasing long-term loyalty.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+            <div class="card-content">
+                <h3>Weekly Trends</h3>
+                <p>Latest fashion collections.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47">
+            <div class="card-content">
+                <h3>Style Tips</h3>
+                <p>Outfit inspiration & guides.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+            <div class="card-content">
+                <h3>New Arrivals</h3>
+                <p>Fresh collections weekly.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= PROMOTION ================= -->
+<section class="section">
+
+    <h2>Promotion Emails</h2>
+
+    <p class="desc">
+    Promotion emails drive conversions with discounts, seasonal offers, and limited-time deals. These campaigns encourage customers to act quickly and significantly boost sales during special events and launches.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae">
+            <div class="card-content">
+                <h3>50% OFF Sale</h3>
+                <p>High-impact discount campaigns.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555529771-122e5d9f2341">
+            <div class="card-content">
+                <h3>Festive Offers</h3>
+                <p>Holiday special promotions.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e">
+            <div class="card-content">
+                <h3>Flash Deals</h3>
+                <p>Urgency-driven sales emails.</p>
+                <button>Preview</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Start Growing Your Brand with Email Marketing Today</h2>
+    <button>Launch Campaign</button>
+</section>
+
+<footer>
+    © 2026 Nice & Next StyleUp
+</footer>
+
+</body>
+</html>

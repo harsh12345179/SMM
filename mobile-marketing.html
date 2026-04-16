@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Marketing | StyleUp</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+body{
+    background:#f4f6fa;
+}
+
+/* HEADER */
+header{
+    background:#2c3e50;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    padding:80px 20px;
+    text-align:center;
+    background:#34495e;
+    color:white;
+}
+.hero h2{font-size:40px;}
+
+/* SECTION */
+.section{
+    padding:70px 50px;
+    text-align:center;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    text-align:left;
+}
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 18px;
+    background:#f1c40f;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* HIDDEN */
+.more{
+    display:none;
+    margin-top:10px;
+}
+
+/* APP SECTION */
+.app{
+    background:#2c3e50;
+    color:white;
+    padding:50px;
+    border-radius:12px;
+}
+
+/* FOOTER */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>StyleUp</h2>
+    <nav>
+        <a href="smmproject.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">Marketing</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Mobile Marketing Strategy</h2>
+    <p>Grow your brand using mobile-first digital marketing techniques</p>
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+    <h2>Mobile Marketing Methods</h2>
+
+    <div class="grid">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
+            <h3>App-Based Marketing</h3>
+            <p>Promote products through mobile applications.</p>
+
+            <div class="more">
+                <p>
+                StyleUp can use apps to send push notifications, discounts, and personalized offers.
+                This helps increase engagement and repeat customers.
+                </p>
+            </div>
+
+            <button class="btn" onclick="toggle(this)">Read More</button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+            <h3>In-Game Marketing</h3>
+            <p>Ads inside mobile games.</p>
+
+            <div class="more">
+                <p>
+                Fashion brands can target younger audiences through gaming apps
+                by showing ads during gameplay.
+                </p>
+            </div>
+
+            <button class="btn" onclick="toggle(this)">Read More</button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581090700227-1e8b9a3d7c69">
+            <h3>QR Code Marketing</h3>
+            <p>Scan and get offers instantly.</p>
+
+            <div class="more">
+                <p>
+                StyleUp can use QR codes on posters or packaging to redirect users to product pages.
+                </p>
+            </div>
+
+            <button class="btn" onclick="toggle(this)">Read More</button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764ce7">
+            <h3>Location-Based Marketing</h3>
+            <p>Target users by location.</p>
+
+            <div class="more">
+                <p>
+                Send offers when users are near stores or specific cities.
+                Perfect for local promotions.
+                </p>
+            </div>
+
+            <button class="btn" onclick="toggle(this)">Read More</button>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+            <h3>Mobile Search Ads</h3>
+            <p>Google mobile ads.</p>
+
+            <div class="more">
+                <p>
+                StyleUp can use Google Ads to appear in mobile searches
+                with call buttons and directions.
+                </p>
+            </div>
+
+            <button class="btn" onclick="toggle(this)">Read More</button>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1520975922323-6d2f45b9b6ae">
+            <h3>SMS Marketing</h3>
+            <p>Direct messaging campaigns.</p>
+
+            <div class="more">
+                <p>
+                Send offers, order updates, and discounts directly to customers.
+                Very effective for engagement.
+                </p>
+            </div>
+
+            <button class="btn" onclick="toggle(this)">Read More</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- APP -->
+<section class="section">
+    <div class="app">
+        <h2>Download StyleUp App</h2>
+        <p>Get offers, notifications, and faster shopping experience</p>
+        <button class="btn">Download Now</button>
+    </div>
+</section>
+
+<footer>
+    © 2026 Nice & Next StyleUp | Mobile Marketing
+</footer>
+
+<script>
+function toggle(btn){
+    let more = btn.previousElementSibling;
+
+    if(more.style.display === "block"){
+        more.style.display = "none";
+        btn.innerText = "Read More";
+    }else{
+        more.style.display = "block";
+        btn.innerText = "Show Less";
+    }
+}
+</script>
+
+</body>
+</html>

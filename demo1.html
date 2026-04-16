@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nice&Next | StyleUp Blog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f9fafb, #eef2f7);
+      color: #111827;
+    }
+
+    /* Header */
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header span {
+      color: #38bdf8;
+    }
+
+    header p {
+      margin-top: 0.7rem;
+      color: #cbd5f5;
+      font-size: 1.1rem;
+    }
+
+    /* Intro */
+    .intro {
+      max-width: 850px;
+      margin: 3.5rem auto;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 2.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      color: #475569;
+      font-size: 1.05rem;
+    }
+
+    /* Main */
+    main {
+      max-width: 1150px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 2.2rem;
+      box-shadow: 0 18px 35px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #4b5563;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      background: #0f172a;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* Button */
+    .btn {
+      margin-top: 1.6rem;
+      padding: 0.8rem 1.8rem;
+      border-radius: 999px;
+      border: none;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Nice<span>&</span>Next</h1>
+    <p>StyleUp Fashion Blog · Trends for Men, Women & Kids</p>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro">
+    <h2>Welcome to StyleUp ✨</h2>
+    <p>
+      Nice&Next is a modern fashion blog focused on everyday style and future trends.
+      StyleUp is where men, women, and children find inspiration to dress confidently,
+      comfortably, and stylishly for every moment.
+    </p>
+    <button class="btn" onclick="greet()">Explore Style</button>
+  </section>
+
+  <!-- Main Blog Content -->
+  <main>
+    <article class="card">
+      <h3>👔 StyleUp for Men</h3>
+      <p>
+        Men’s fashion is evolving beyond basics. StyleUp for men focuses on
+        clean fits, neutral tones, and smart layering. From casual streetwear
+        to modern formal looks, Nice&Next helps men stay confident and timeless.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>👗 StyleUp for Women</h3>
+      <p>
+        Women’s style is about expression and comfort. StyleUp highlights
+        elegant silhouettes, bold colors, and versatile outfits that move
+        seamlessly from workdays to weekends with confidence and grace.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>🧒 StyleUp for Children</h3>
+      <p>
+        Children’s fashion should be fun, playful, and practical. StyleUp for
+        kids focuses on soft fabrics, bright designs, and styles that allow
+        freedom, joy, and creativity in every step.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Nice&Next · StyleUp Blog · Designed with ❤️</p>
+  </footer>
+
+  <script>
+    function greet() {
+      alert("Welcome to Nice&Next StyleUp Blog! 👕✨");
+    }
+  </script>
+
+</body>
+</html>
